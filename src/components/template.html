@@ -1,5 +1,9 @@
+<!-- Takin main tag which will contain main content of the webpage -->
 <main>
+  <!-- Using button for sliding to previous page -->
+  <!-- prevSlide is a function defined in code logic in js file -->
   <button @click="prevSlide" class="prev">
+    <!-- Using << icon from (heroicons.com) -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -15,64 +19,73 @@
       />
     </svg>
   </button>
+  <!-- Taking a section with class "slides" part which will have all movie cards -->
+  <!-- binding style in this section tag which is going to shift our page right and left and button clicks -->
   <section
     class="slides"
     :style="{ transform: `translateX(-${currentIndex}px)` }"
   >
+    <!-- Taking article tags as they signifies independent tags having some content -->
+    <!-- Class is slide which implies to a movie card -->
     <article class="slide">
-      <img src="../assets/images/oppenhiemer.jpg" alt="" />
-
+      <img src="../assets/images/oppenhiemer.jpg" alt="Oppenheimer" />
+      <!-- Each movie image has a name, so using <p> tag as per the figma file -->
       <p>Oppenheimer</p>
     </article>
+    <!-- Similarly using multiple movie cards -->
     <article class="slide">
-      <img src="../assets/images/past_lives.jpg" alt="" />
+      <img src="../assets/images/past_lives.jpg" alt="Past Lives" />
+      <!-- All the images used are put inside assets folder -->
       <p>Past Lives</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/polite_society.jpg" alt="" />
+      <img src="../assets/images/polite_society.jpg" alt="Polite Society" />
       <p>Polite Society</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/robots.jpg" alt="" />
+      <img src="../assets/images/robots.jpg" alt="Robots" />
       <p>Robots</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/sanctury.jpg" alt="" />
+      <img src="../assets/images/sanctury.jpg" alt="Sanctuary" />
       <p>Sanctuary</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/talktome.jpg" alt="" />
+      <img src="../assets/images/talktome.jpg" alt="Talk To Me" />
       <p>Talk To Me</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/About_My_Father_poster.jpg" alt="" />
+      <img src="../assets/images/About_My_Father_poster.jpg" alt="About My Father" />
       <p>About My Father</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/air.jpg" alt="" />
+      <img src="../assets/images/air.jpg" alt="Air" />
       <p>Air</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/areyoutheregod.jpg" alt="" />
+      <img src="../assets/images/areyoutheregod.jpg" alt="Are You There God?" />
       <p>
         Are You There God?<br />
         It's me Margaret
       </p>
     </article>
     <article class="slide">
-      <img src="../assets/images/galaxy.jpg" alt="" />
+      <img src="../assets/images/galaxy.jpg" alt="Guardian of the Galaxy: V3" />
       <p>Guardians of the Galaxy: Volume 3</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/foreman.jpg" alt="" />
+      <img src="../assets/images/foreman.jpg" alt="Foreman" />
       <p>Big George Formman</p>
     </article>
     <article class="slide">
-      <img src="../assets/images/beauisafraid.jpg" alt="" />
+      <img src="../assets/images/beauisafraid.jpg" alt="Beau Is Afraid" />
       <p>Beau Is Afraid</p>
     </article>
   </section>
+  <!-- Again using a button for going to the next slide on clicking right(>>) arrow on UI -->
+  <!-- nextSlide is a function defined in code logic in js file -->
   <button @click="nextSlide" class="next">
+    <!-- Again taking >> icon from heroicons.com -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
