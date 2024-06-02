@@ -1,0 +1,91 @@
+<main>
+  <button @click="prevSlide" class="prev">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="arrow-icon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
+      />
+    </svg>
+  </button>
+  <section
+    class="slides"
+    :style="{ transform: `translateX(-${currentIndex}px)` }"
+  >
+    <article class="slide">
+      <img src="../assets/images/oppenhiemer.jpg" alt="" />
+
+      <p>Oppenheimer</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/past_lives.jpg" alt="" />
+      <p>Past Lives</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/polite_society.jpg" alt="" />
+      <p>Polite Society</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/robots.jpg" alt="" />
+      <p>Robots</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/sanctury.jpg" alt="" />
+      <p>Sanctuary</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/talktome.jpg" alt="" />
+      <p>Talk To Me</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/About_My_Father_poster.jpg" alt="" />
+      <p>About My Father</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/air.jpg" alt="" />
+      <p>Air</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/areyoutheregod.jpg" alt="" />
+      <p>
+        Are You There God?<br />
+        It's me Margaret
+      </p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/galaxy.jpg" alt="" />
+      <p>Guardians of the Galaxy: Volume 3</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/foreman.jpg" alt="" />
+      <p>Big George Formman</p>
+    </article>
+    <article class="slide">
+      <img src="../assets/images/beauisafraid.jpg" alt="" />
+      <p>Beau Is Afraid</p>
+    </article>
+  </section>
+  <button @click="nextSlide" class="next">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="arrow-icon"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </button>
+</main>
